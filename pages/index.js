@@ -1,18 +1,20 @@
 import Head from 'next/head'
+import Tile from '../components/tile'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Siggi's Blog</title>
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to Siggi's Blog
         </h1>
+
+        <Tile text='hello' color='green' />
 
         <p className={styles.description}>
           Get started by editing{' '}

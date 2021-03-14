@@ -14,3 +14,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  
+  font-size: 16px;
+  line-height: 400px;
+  height: 400px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 400px;  
+}

@@ -118,8 +118,30 @@
   height: 6em;
 }
 
-.table td {
-  border: 1px solid #0070f3;
+.gridContainer {
+  display: inline-grid;
+  
+}
+
+.image {
+  height: 10px;
+  width: 50px;
+}
+
+.item-a {
+  grid-area: "a";
+}
+
+.item-b {
+  grid-area: "b"
+}
+
+.item-c {
+  grid-area: "c";
+}
+
+.item-d {
+  grid-area: "d";
 }
 
 @media (max-width: 600px) {

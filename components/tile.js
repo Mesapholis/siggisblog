@@ -1,7 +1,9 @@
-import styles from '../styles/Tiles.module.css'
+const tiles = [1, 2, 3, 4]
 
-export default function Tile({ text, color }) {
+export default function Tile() {
     return (
-        <p className={styles.title} style={{ color }}> { text}</p >
-    )
+        <button class="square">
+            SQUARE COMPONENT
+        </button>
+    );
 }

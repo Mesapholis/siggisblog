@@ -2,6 +2,8 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Tile from '../components/tile.js'
 
+var interestingTitle = 'TestingTitle';
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -19,11 +21,11 @@ export default function Home() {
           <code className={styles.code}>learning</code>
         </p>
 
-        <div className="gridContainer">
-          <div><Tile></Tile><Tile></Tile><Tile></Tile></div>
+        <div className="container">
+          <div><Tile title={interestingTitle}></Tile></div>
           <div><Tile></Tile></div>
-          <div><Tile></Tile><Tile></Tile></div>
-          <div><Tile></Tile><Tile></Tile><Tile></Tile><Tile></Tile></div>
+          <div><Tile></Tile></div>
+          <div><Tile></Tile><Tile>5</Tile></div>
         </div>
 
       </main>
@@ -38,6 +40,6 @@ export default function Home() {
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
-    </div>
+    </div >
   )
 }
